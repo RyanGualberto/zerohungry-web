@@ -10,6 +10,7 @@ const posts = [
     type: "offer",
     date: "2020-05-20",
     time: "10:00",
+    productId: 1,
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const posts = [
     type: "offer",
     date: "2020-05-17",
     time: "10:00",
+    productId: 2,
   },
   {
     id: 3,
@@ -30,6 +32,7 @@ const posts = [
     type: "offer",
     date: "2020-05-15",
     time: "10:00",
+    productId: 3,
   },
   {
     id: 4,
@@ -40,6 +43,7 @@ const posts = [
     type: "offer",
     date: "2020-05-10",
     time: "10:00",
+    productId: 4,
   },
   {
     id: 5,
