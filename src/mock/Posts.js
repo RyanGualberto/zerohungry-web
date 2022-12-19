@@ -1,0 +1,73 @@
+// mock de posts com ofertas, campos: img, oldPrice e price
+
+const posts = [
+  {
+    id: 1,
+    img: "https://img.estadao.com.br/thumbs/640/resources/jpg/7/3/1653514781237.jpg",
+    title: "Tênis Nike Revolution 5 Masculino",
+    price: "R$ 199,90",
+    oldPrice: "R$ 299,90",
+    type: "offer",
+    date: "2020-05-20",
+    time: "10:00",
+  },
+  {
+    id: 2,
+    img: "https://img.estadao.com.br/thumbs/640/resources/jpg/7/3/1653514781237.jpg",
+    title: "Tênis Nike Revolution 5 Masculino",
+    price: "R$ 199,90",
+    oldPrice: "R$ 299,90",
+    type: "offer",
+    date: "2020-05-17",
+    time: "10:00",
+  },
+  {
+    id: 3,
+    img: "https://img.estadao.com.br/thumbs/640/resources/jpg/7/3/1653514781237.jpg",
+    title: "Tênis Nike Revolution 5 Masculino",
+    price: "R$ 199,90",
+    oldPrice: "R$ 299,90",
+    type: "offer",
+    date: "2020-05-15",
+    time: "10:00",
+  },
+  {
+    id: 4,
+    img: "https://img.estadao.com.br/thumbs/640/resources/jpg/7/3/1653514781237.jpg",
+    title: "Tênis Nike Revolution 5 Masculino",
+    price: "R$ 199,90",
+    oldPrice: "R$ 299,90",
+    type: "offer",
+    date: "2020-05-10",
+    time: "10:00",
+  },
+  {
+    id: 5,
+    img: "https://img.estadao.com.br/thumbs/640/resources/jpg/7/3/1653514781237.jpg",
+    title: "Tênis Nike Revolution 5 Masculino",
+    body: "Tênis Nike Revolution 5 Masculino",
+    type: "common",
+    date: "2020-05-20",
+    time: "10:00",
+  },
+  {
+    id: 6,
+    img: "https://img.estadao.com.br/thumbs/640/resources/jpg/7/3/1653514781237.jpg",
+    title: "Tênis Nike Revolution 5 Masculino",
+    body: "Tênis Nike Revolution 5 Masculino",
+    type: "common",
+    date: "2020-05-17",
+    time: "10:00",
+  },
+  {
+    id: 7,
+    img: "https://img.estadao.com.br/thumbs/640/resources/jpg/7/3/1653514781237.jpg",
+    title: "Tênis Nike Revolution 5 Masculino",
+    body: "Tênis Nike Revolution 5 Masculino",
+    type: "common",
+    date: "2020-05-15",
+    time: "10:00",
+  },
+];
+
+export default posts;
