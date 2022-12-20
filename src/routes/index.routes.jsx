@@ -6,9 +6,11 @@ import ClientRoutes from "./client.routes";
 const LanguageContext = createContext();
 
 export default function Index() {
+  const [language, setLanguage] = React.useState("");
+
   return (
     <Router>
-      <LanguageContext.Provider>
+      <LanguageContext.Provider value={{ language, setLanguage }}>
         <Routes>
           <Route exact path="/" element={<Welcome />} />
           <Route path="/cl/*" element={<ClientRoutes />} />

@@ -8,7 +8,9 @@ export default function ProductCard({ product }) {
         src={product.image}
         alt={product.name}
       />
-      <h1 className="font-semibold text-2xl">{product.name}</h1>
+      <h1 className="font-semibold text-2xl max-h-[40px] overflow-hidden">
+        {product.name}
+      </h1>
       <p className="text-2xl font-bold text-red-600">
         R${parseFloat(product.price).toFixed(2)}
       </p>

@@ -7,7 +7,7 @@ import FilterBar from "../../components/FilterBar";
 
 export default function Menu() {
   return (
-    <div className="w-full py-4 px-16 flex flex-col gap-4 overflow-x-hidden bg-red-50">
+    <div className="w-full py-4 px-16 flex flex-col gap-4 overflow-x-hidden">
       <BackToTop />
       <Header />
       <FilterBar />
