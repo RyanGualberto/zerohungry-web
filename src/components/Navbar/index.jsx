@@ -4,8 +4,9 @@ import {
   MdRestaurantMenu,
   MdOutlineFastfood,
   MdFastfood,
+  MdLocalOffer,
+  MdOutlineLocalOffer,
 } from "react-icons/md";
-import { RiCoupon3Line, RiCoupon3Fill } from "react-icons/ri";
 import { IoNewspaperOutline, IoNewspaperSharp } from "react-icons/io5";
 import NavLink from "../NavLink";
 import { Link } from "react-router-dom";
@@ -13,7 +14,7 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <div className="h-full flex flex-col p-4 justify-between border-r-[0.5px]">
-      <div className="font-black text-4xl">ZeroHungry</div>
+      <div className="font-black text-4xl">ZeroHunger</div>
       <div className="flex flex-col gap-1">
         <NavLink
           pathParam="/cl/home"
@@ -34,10 +35,10 @@ export default function Navbar() {
           label="Combos"
         />
         <NavLink
-          pathParam="/cl/cupons"
-          iconActive={<RiCoupon3Fill size={24} />}
-          iconInactive={<RiCoupon3Line size={24} />}
-          label="Cupons"
+          pathParam="/cl/promocoes"
+          iconActive={<MdLocalOffer size={24} />}
+          iconInactive={<MdOutlineLocalOffer size={24} />}
+          label="Promoções"
         />
         <NavLink
           pathParam="/cl/novidades"
