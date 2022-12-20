@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import FlagBr from "../../assets/flag-br.svg";
 import FlagUs from "../../assets/flag-us.svg";
 
@@ -44,12 +45,13 @@ export default function Welcome() {
             <div>English</div>
           </div>
         </div>
-        <button
+        <Link
+          to="/cl/home"
           disabled={languageSelected === ""}
           className="bg-green-600 ease-in-out duration-300  disabled:bg-opacity-30 w-full p-2 text-center text-white font-semibold rounded-lg"
         >
           Avançar
-        </button>
+        </Link>
       </div>
     </div>
   );

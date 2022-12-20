@@ -14,7 +14,7 @@ export default function NavLink({
       to={pathParam}
       className={`
         ${pathname === pathParam && "bg-gray-100"} 
-        px-2 font-medium py-4 hover:bg-gray-100 rounded-lg ease-in-out duration-300 flex gap-2 items-center cursor-pointer`}
+        px-4 font-medium py-4 hover:bg-gray-100 rounded-lg ease-in-out duration-300 flex gap-2 items-center cursor-pointer text-lg`}
     >
       {pathname === pathParam ? iconActive : iconInactive}
       {label}

@@ -8,11 +8,12 @@ import {
 import { RiCoupon3Line, RiCoupon3Fill } from "react-icons/ri";
 import { IoNewspaperOutline, IoNewspaperSharp } from "react-icons/io5";
 import NavLink from "../NavLink";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <div className="h-full flex flex-col p-4 justify-between border-r-[0.5px]">
-      <div>ZeroHungry</div>
+      <div className="font-black text-4xl">ZeroHungry</div>
       <div className="flex flex-col gap-1">
         <NavLink
           pathParam="/cl/home"
@@ -45,9 +46,12 @@ export default function Navbar() {
           label="Novidades"
         />
       </div>
-      <div className="bg-red-600 text-white p-2 rounded-lg w-full font-semibold whitespace-nowrap">
+      <Link
+        to="/"
+        className="bg-red-600 text-white text-center cursor-pointer p-2 rounded-lg w-full font-semibold whitespace-nowrap"
+      >
         Cancelar Pedido
-      </div>
+      </Link>
     </div>
   );
 }

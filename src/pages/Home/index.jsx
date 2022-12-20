@@ -5,11 +5,11 @@ import Post from "../../components/Post";
 
 export default function Home() {
   return (
-    <div className="w-full p-4 flex flex-col gap-4">
+    <div className="w-full  py-4 px-16 flex flex-col gap-4">
       <Header />
-      <div className="grid grid-cols-2 gap-4 h-full overflow-scroll scrollbar-hide">
+      <div className="flex justify-start flex-wrap gap-2 h-full overflow-scroll scrollbar-hide">
         {posts.map((post) => (
-          <Post post={post} />
+          <Post key={post?.id} post={post} />
         ))}
       </div>
     </div>
