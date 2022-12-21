@@ -15,7 +15,7 @@ export default function Orders() {
       </div>
       <div className="flex flex-wrap gap-2">
         {orders.map((order) => (
-          <OrderCard order={order} />
+          <OrderCard order={order} key={order?.id} />
         ))}
       </div>
     </div>

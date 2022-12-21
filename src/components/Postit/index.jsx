@@ -14,8 +14,8 @@ export default function PostIt({ order }) {
         <p className="text-sm">#{order?.id}</p>
       </div>
       <div className="max-h-[85px] overflow-y-scroll  scrollbar-hide">
-        {order?.products?.map((product) => (
-          <div className="w-full flex justify-between">
+        {order?.products?.map((product, idx) => (
+          <div className="w-full flex justify-between" key={idx}>
             <p className="max-w-[240px] overflow-hidden">{product.name}</p>
             <p>x{product.quantity}</p>
           </div>

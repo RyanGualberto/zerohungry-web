@@ -7,8 +7,9 @@ export default function TableManager() {
     <div className="w-1/3 flex flex-col gap-2 h-full">
       <h1 className="font-semibold text-lg">Gerenciamento de mesas</h1>
       <div className="max-h-full overflow-y-scroll scrollbar-hide flex flex-col gap-2">
-        {Tables.map((table) => (
+        {Tables.map((table, idx) => (
           <Link
+            key={idx}
             to={table?.order && `/adm/order/${table?.order}`}
             className="border-2 rounded-lg min-h-[80px] flex flex-col items-end w-full gap-2 p-2"
           >

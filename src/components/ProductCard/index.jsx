@@ -1,8 +1,15 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product, isAdmin }) {
+  const { pathname } = useLocation();
+  const linkPrefix = pathname.split("/")[1];
+
   return (
-    <div className="bg-gray-100 flex flex-col gap-2 p-4 rounded-lg w-[300px]">
+    <Link
+      to={`/${linkPrefix}/product/${product?.id}`}
+      className="bg-gray-100 flex flex-col gap-2 p-4 rounded-lg w-[300px]"
+    >
       <img
         className="w-full h-[150px] object-cover rounded-lg"
         src={product.image}
@@ -21,11 +28,22 @@ export default function ProductCard({ product }) {
           </span>
         ))}
       </p>
-      <div>
-        <button className="bg-yellow-500 w-full text-white font-semibold py-2 px-4 rounded-lg">
-          Adicionar à Sacola
-        </button>
+      <div className="w-full flex justify-between gap-2">
+        {isAdmin ? (
+          <>
+            <button className="bg-blue-500 w-full text-white font-semibold py-2 px-4 rounded-lg">
+              Editar
+            </button>
+            <button className="bg-red-500 w-full text-white font-semibold py-2 px-4 rounded-lg">
+              Deletar
+            </button>
+          </>
+        ) : (
+          <button className="bg-yellow-500 w-full text-white font-semibold py-2 px-4 rounded-lg">
+            Adicionar à Sacola
+          </button>
+        )}
       </div>
-    </div>
+    </Link>
   );
 }
