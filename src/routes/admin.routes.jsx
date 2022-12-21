@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import AdminNavbar from "../components/AdminNavbar";
 import AdminHome from "../pages/Admin/Home";
+import Orders from "../pages/Admin/Orders";
 
 export default function AdminRoutes() {
   return (
@@ -9,6 +10,7 @@ export default function AdminRoutes() {
       <AdminNavbar />
       <Routes>
         <Route exact path="/home" element={<AdminHome />} />
+        <Route exact path="/comandas" element={<Orders />} />
       </Routes>
     </div>
   );

@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 export default function PostIt({ order }) {
   return (
     <Link
-      className="flex flex-col border-gray-100 border-2 bg-yellow-50 p-4 rounded-b-lg min-w-[300px] gap-2  max-w-[300px] h-fit"
-      to={`/admin/orders/${order.id}`}
+      className=" relative flex flex-col border-gray-100 border-2 bg-gradient-to-br from-yellow-200 to-white p-4 rounded-b-lg min-w-[300px] gap-2 max-w-[300px] h-fit"
+      to={`/adm/orders/${order.id}`}
       key={order.id}
     >
+      <div className="h-4 w-4 bg-gradient-to-br from-red-500 to-red-200 rounded-full self-center absolute top-1" />
       <div className="w-full flex justify-between">
         <p className="text-xl">{order.table}</p>
         <p className="text-sm">#{order?.id}</p>

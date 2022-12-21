@@ -3,9 +3,10 @@ const orders = [
   {
     id: 1,
     table: 1,
-    status: "open",
+    status: "Aberta",
     total: 12,
     time: "12:00",
+    clientName: "João",
     products: [
       {
         id: 1,
@@ -26,9 +27,10 @@ const orders = [
   {
     id: 2,
     table: 2,
-    status: "open",
+    status: "Aberta",
     total: 19,
     time: "12:00",
+    clientName: "John",
     products: [
       {
         id: 1,
@@ -56,9 +58,10 @@ const orders = [
   {
     id: 3,
     table: 3,
-    status: "open",
+    status: "Aberta",
     total: 22,
     time: "11:00",
+    clientName: "John",
     products: [
       {
         id: 1,
@@ -100,9 +103,10 @@ const orders = [
   {
     id: 4,
     table: 4,
-    status: "open",
+    status: "Aberta",
     total: 22,
     time: "11:00",
+    clientName: "John",
     products: [
       {
         id: 1,
@@ -137,8 +141,9 @@ const orders = [
   {
     id: 5,
     table: 1,
-    status: "paid",
+    status: "Pago",
     time: "12:00",
+    clientName: "John",
     total: 12,
     products: [
       {

@@ -18,10 +18,10 @@ export default function AdminNavbar() {
           label="Início"
         />
         <NavLink
-          pathParam="/adm/pedidos"
+          pathParam="/adm/comandas"
           iconActive={<HiClipboardList size={24} />}
           iconInactive={<HiOutlineClipboardList size={24} />}
-          label="Pedidos"
+          label="Comandas"
         />
         <NavLink
           pathParam="/adm/cardapio"
