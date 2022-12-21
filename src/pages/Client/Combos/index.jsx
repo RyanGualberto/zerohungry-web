@@ -1,8 +1,8 @@
 import React from "react";
-import FilterBar from "../../components/FilterBar";
-import Header from "../../components/Header";
-import ProductCard from "../../components/ProductCard";
-import combos from "../../mock/Combos";
+import FilterBar from "../../../components/FilterBar";
+import Header from "../../../components/Header";
+import ProductCard from "../../../components/ProductCard";
+import combos from "../../../mock/Combos";
 
 export default function Combos() {
   return (

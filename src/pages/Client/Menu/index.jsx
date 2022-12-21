@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../../components/Header";
-import Products from "../../mock/Products";
-import ProductCard from "../../components/ProductCard";
-import BackToTop from "../../components/BackToTop";
-import FilterBar from "../../components/FilterBar";
+import Header from "../../../components/Header";
+import Products from "../../../mock/Products";
+import ProductCard from "../../../components/ProductCard";
+import BackToTop from "../../../components/BackToTop";
+import FilterBar from "../../../components/FilterBar";
 
 export default function Menu() {
   return (

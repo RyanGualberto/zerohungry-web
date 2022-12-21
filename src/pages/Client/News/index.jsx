@@ -1,8 +1,8 @@
 import React from "react";
-import FilterBar from "../../components/FilterBar";
-import Header from "../../components/Header";
-import Products from "../../mock/Products";
-import ProductCard from "../../components/ProductCard";
+import FilterBar from "../../../components/FilterBar";
+import Header from "../../../components/Header";
+import Products from "../../../mock/Products";
+import ProductCard from "../../../components/ProductCard";
 
 export default function News() {
   return (

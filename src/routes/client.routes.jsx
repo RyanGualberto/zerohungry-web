@@ -1,11 +1,11 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import Combos from "../pages/Combos";
-import Coupons from "../pages/Coupons";
-import Home from "../pages/Home";
-import Menu from "../pages/Menu";
-import News from "../pages/News";
+import Combos from "../pages/Client/Combos";
+import Coupons from "../pages/Client/Coupons";
+import Home from "../pages/Client/Home";
+import Menu from "../pages/Client/Menu";
+import News from "../pages/Client/News";
 
 export default function ClientRoutes() {
   return (
