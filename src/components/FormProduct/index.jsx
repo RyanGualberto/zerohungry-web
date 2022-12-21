@@ -1,40 +1,36 @@
 import React from "react";
+import Input, { Select, TextArea } from "../Input";
+
+const types = [
+  { id: "produto", name: "Produto" },
+  { id: "postagem", name: "Postagem" },
+  { id: "combo", name: "Combo" },
+  { id: "promocao", name: "Promoção" },
+];
 
 export default function FormProduct({ setType }) {
   return (
     <div className="flex gap-2">
-      <div className="w-1/2 flex flex-col gap-2">
-        <select
-          className="w-full p-2 bg-white border-2 rounded-md"
-          onChange={(e) => setType(e.target.value)}
-        >
-          <option value="produto">Produto</option>
-          <option value="postagem">Postagem</option>
-          <option value="combo">Combo</option>
-          <option value="promocao">Promoção</option>
-        </select>
-        <input
-          type="text"
-          placeholder="Nome"
-          className="w-full p-2 bg-white border-2 rounded-md"
+      <div className="w-1/2 flex flex-col gap-4">
+        <Select
+          options={types}
+          label="Tipo"
+          setValue={(value) => setType(value)}
         />
-        <input
+        <Input label={"Titulo"} placeholder="Sucos Novos" type="text" />
+        <Input
+          label={"Descrição"}
+          placeholder="Venha Conhecer os novos sabores de suco"
           type="text"
-          placeholder="Descrição"
-          className="w-full p-2 bg-white border-2 rounded-md"
         />
-        <input
-          type="text"
-          placeholder="Preço"
-          className="w-full p-2 bg-white border-2 rounded-md"
-        />
+        <Input label={"Preço"} placeholder="9.99" min={0.01} type="number" />
       </div>
       <div className="w-1/2 flex flex-col gap-2">
         <input type="file" placeholder="imagem" className="h-[80px]" />
-        <textarea
-          placeholder="Ingredientes"
-          className="w-full p-2 bg-white border-2 rounded-md h-full"
-        />
+        <TextArea label={"Ingredientes"} placeholder="Ingredientes" />
+        <label className="text-xs text-[#33333370]">
+          * lembre-se de separar os ingredientes através de espaços
+        </label>
       </div>
     </div>
   );
