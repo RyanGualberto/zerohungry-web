@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../../../components/Header";
-import posts from "../../../mock/Posts";
-import Post from "../../../components/Post";
+import Header from "../../components/Header";
+import posts from "../../mock/Posts";
+import Post from "../../components/Post";
 
 export default function Home() {
   return (

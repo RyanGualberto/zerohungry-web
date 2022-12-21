@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../../../components/Header";
-import Products from "../../../mock/Products";
-import ProductCard from "../../../components/ProductCard";
-import BackToTop from "../../../components/BackToTop";
-import FilterBar from "../../../components/FilterBar";
+import Header from "../../components/Header";
+import Products from "../../mock/Products";
+import ProductCard from "../../components/ProductCard";
+import BackToTop from "../../components/BackToTop";
+import FilterBar from "../../components/FilterBar";
 
 export default function Menu() {
   return (
@@ -13,7 +13,7 @@ export default function Menu() {
       <FilterBar />
       <div className="flex flex-wrap overflow-y-scroll scrollbar-hide gap-2">
         {Products.map((product) => (
-          <ProductCard key={product?.id} product={product} isAdmin />
+          <ProductCard key={product?.id} product={product} />
         ))}
       </div>
     </div>

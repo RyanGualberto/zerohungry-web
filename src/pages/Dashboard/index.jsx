@@ -1,10 +1,11 @@
 import React from "react";
-import OrderBar from "../../../components/OrderBar";
-import TableManager from "../../../components/TableManager";
+import OrderBar from "../../components/OrderBar";
+import TableManager from "../../components/TableManager";
 
 export default function AdminHome() {
   return (
-    <div className="w-screen h-screen flex flex-col gap-6 px-16 py-4 overflow-hidden">
+    <div className="w-screen h-screen flex flex-col gap-6 px-16 py-4 overflow-auto scrollbar-hide">
+      <h1 className="text-3xl font-bold">Dashboard</h1>
       <OrderBar />
       <div className="h-1/2 w-full flex justify-between">
         <TableManager />

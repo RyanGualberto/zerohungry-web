@@ -35,6 +35,9 @@ export default function AdminNavbar() {
           iconInactive={<IoNewspaperOutline size={24} />}
           label="Novidades"
         />
+        <div className="font-medium py-4 bg-blue-500 text-white rounded-lg hover:bg-opacity-80 ease-in-out duration-300 flex justify-center items-center cursor-pointer text-lg">
+          Adicionar
+        </div>
       </div>
       <Link
         to="/"

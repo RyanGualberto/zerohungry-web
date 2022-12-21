@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-export default function ProductCard({ product, isAdmin }) {
+export default function ProductCard({ product }) {
   const { pathname } = useLocation();
   const linkPrefix = pathname.split("/")[1];
 
@@ -29,7 +29,7 @@ export default function ProductCard({ product, isAdmin }) {
         ))}
       </p>
       <div className="w-full flex justify-between gap-2">
-        {isAdmin ? (
+        {linkPrefix === "adm" ? (
           <>
             <button className="bg-blue-500 w-full text-white font-semibold py-2 px-4 rounded-lg">
               Editar

@@ -1,6 +1,6 @@
 import React from "react";
-import OrderCard from "../../../components/OrderCard";
-import orders from "../../../mock/Orders";
+import OrderCard from "../../components/OrderCard";
+import orders from "../../mock/Orders";
 
 export default function Orders() {
   return (
