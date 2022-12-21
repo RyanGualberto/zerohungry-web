@@ -10,9 +10,12 @@ export default function Welcome() {
     <div className="w-screen h-screen flex justify-center items-center">
       <div className="absolute top-0 w-full items-center flex justify-between p-2 border-b-[0.5px]">
         <div>ZeroHunger</div>
-        <div className="p-2 rounded-lg bg-green-600 font-semibold text-white">
+        <Link
+          to="/adm/home"
+          className="p-2 rounded-lg bg-green-600 font-semibold text-white"
+        >
           Entrar
-        </div>
+        </Link>
       </div>
       <div className="p-4 bg-slate-100 rounded-lg flex flex-col gap-2 items-center">
         <div>Seja Bem Vindo</div>
