@@ -4,9 +4,9 @@ import Tables from "../../mock/Tables";
 
 export default function TableManager() {
   return (
-    <div className="w-1/3">
-      <h1>Gerenciamento de mesas</h1>
-      <div className="max-h-[280px] overflow-y-scroll scrollbar-hide flex flex-col gap-2">
+    <div className="w-1/3 flex flex-col gap-2 h-full">
+      <h1 className="font-semibold text-lg">Gerenciamento de mesas</h1>
+      <div className="max-h-full overflow-y-scroll scrollbar-hide flex flex-col gap-2">
         {Tables.map((table) => (
           <Link
             to={table?.order && `/adm/order/${table?.order}`}
