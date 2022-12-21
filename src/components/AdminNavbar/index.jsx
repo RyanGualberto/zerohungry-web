@@ -6,7 +6,7 @@ import { HiOutlineClipboardList, HiClipboardList } from "react-icons/hi";
 import NavLink from "../NavLink";
 import { Link } from "react-router-dom";
 
-export default function AdminNavbar() {
+export default function AdminNavbar({ showModal }) {
   return (
     <div className="h-full flex flex-col p-4 justify-between border-r-[0.5px]">
       <div className="font-black text-4xl whitespace-nowrap">ZH Admin</div>
@@ -35,7 +35,10 @@ export default function AdminNavbar() {
           iconInactive={<IoNewspaperOutline size={24} />}
           label="Novidades"
         />
-        <div className="font-medium py-4 bg-blue-500 text-white rounded-lg hover:bg-opacity-80 ease-in-out duration-300 flex justify-center items-center cursor-pointer text-lg">
+        <div
+          onClick={showModal}
+          className="font-medium py-4 bg-blue-500 text-white rounded-lg hover:bg-opacity-80 ease-in-out duration-300 flex justify-center items-center cursor-pointer text-lg"
+        >
           Adicionar
         </div>
       </div>
