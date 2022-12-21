@@ -1,13 +1,8 @@
 import React from "react";
 import { AiOutlineHome, AiFillHome } from "react-icons/ai";
-import {
-  MdRestaurantMenu,
-  MdOutlineFastfood,
-  MdFastfood,
-  MdLocalOffer,
-  MdOutlineLocalOffer,
-} from "react-icons/md";
+import { MdRestaurantMenu } from "react-icons/md";
 import { IoNewspaperOutline, IoNewspaperSharp } from "react-icons/io5";
+import { HiOutlineClipboardList, HiClipboardList } from "react-icons/hi";
 import NavLink from "../NavLink";
 import { Link } from "react-router-dom";
 
@@ -23,22 +18,16 @@ export default function AdminNavbar() {
           label="Início"
         />
         <NavLink
+          pathParam="/adm/pedidos"
+          iconActive={<HiClipboardList size={24} />}
+          iconInactive={<HiOutlineClipboardList size={24} />}
+          label="Pedidos"
+        />
+        <NavLink
           pathParam="/adm/cardapio"
           iconActive={<MdRestaurantMenu size={24} />}
           iconInactive={<MdRestaurantMenu size={24} />}
           label="Cardápio"
-        />
-        <NavLink
-          pathParam="/adm/combos"
-          iconActive={<MdFastfood size={24} />}
-          iconInactive={<MdOutlineFastfood size={24} />}
-          label="Combos"
-        />
-        <NavLink
-          pathParam="/adm/promocoes"
-          iconActive={<MdLocalOffer size={24} />}
-          iconInactive={<MdOutlineLocalOffer size={24} />}
-          label="Promoções"
         />
         <NavLink
           pathParam="/adm/novidades"
