@@ -6,6 +6,7 @@ import Coupons from "../pages/Coupons";
 import Home from "../pages/Home";
 import Menu from "../pages/Menu";
 import News from "../pages/News";
+import Product from "../pages/Product";
 
 export default function ClientRoutes() {
   return (
@@ -18,6 +19,7 @@ export default function ClientRoutes() {
         <Route path="/combos" element={<Combos />} />
         <Route path="/promocoes" element={<Coupons />} />
         <Route path="/novidades" element={<News />} />
+        <Route exact path="/product/:product_id" element={<Product />} />
       </Routes>
     </div>
   );
